@@ -64,21 +64,36 @@ h6 {
   margin-left: -30px;
 }
 
-nav ul {
-  background-color: black;
-  opacity: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: inline;
+/*
+.topbar {
+    display: none;
+}
+*/
+.topbar__menu {
+  display: block;
 }
 
 .topbar {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
-.topbar__menu {
-  display: block;
+.topbar__nav-menu-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 *,
