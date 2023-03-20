@@ -34,6 +34,7 @@ h6 {
   margin-top: 50px;
   left: 155%;
   cursor: pointer;
+  display: none;
 }
 
 .menu-burger span {
@@ -66,7 +67,7 @@ h6 {
 
 /*
 .topbar {
-    display: none;
+    display: none; este deberia desaparer en desktop
 }
 */
 .topbar__menu {
@@ -81,12 +82,47 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 6px 12px;
-  background-color: rgba(0, 0, 0, 0.7);
+  padding: 3px 3px 3px 3px;
   color: white;
+  background: rgba(0, 0, 0, 0.2784313725);
+  position: fixed;
+  width: 100%;
+  height: 115px;
+  align-items: center;
+  -js-display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .topbar__nav-menu-container {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar__nav--logo {
+  width: 200px;
+  height: auto;
+}
+
+.topbar__nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -94,6 +130,22 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fill-available;
+  font-family: monospace;
+  font-size: 17px;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-line: none;
+  text-decoration-color: white;
 }
 
 *,
@@ -108,4 +160,31 @@ h6 {
 body {
   margin: 0;
   padding: 0;
+}
+
+.slider__section1 { /*este es el padre de la portada*/
+  width: 390px;
+  height: 844px;
+}
+
+.slider__section1--content {
+  background: url("../img/landing/portada_imagen.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.topbar__nav-ul {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .topbar__nav-ul {
+    display: block;
+  }
+}
+.slider__section1--portada {
+  position: relative;
+  width: 100%; /* */
+  background-image: url(img/landing/portada_imagen.jpg);
+  background-size: cover;
 }
