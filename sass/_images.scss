@@ -1,11 +1,9 @@
-.slider__section1--portada {
+.slider__section1--content {
     display: flex;
     height: 100vh;
     flex-wrap: wrap;
     position: relative;
     background-size: cover;
     width: 100vw;
-    background-image: url(img/landing/portada_imagen.jpg);  
+    background-image: url(../img/landing/portada_imagen.jpg);  
 }
-
-
