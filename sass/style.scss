@@ -1,4 +1,18 @@
-@import 'headers';
+/*@import custom-properties.css  variable :root {...} */
 @import 'site';
-@import 'menu';
-@import 'images-background';
+@import 'headers';
+@import 'nav';
+@import 'images';
+@import 'typography';
+
+
+/*
+@import lists
+@import forms
+@import link
+@import buttons
+@import mediaquery se pueden tener debajo del elemento que afecta, el problema que tiene es que se repite muchas veces, pero es mínimo y vale la pena
+@import hover-efects
+@import input
+ofrecer temas oscuros, se definen, pero si no hay, el navegador los define por descarte
+@import colors. paleta de colors, con properties AKA variables (color color vgd), (color   */
