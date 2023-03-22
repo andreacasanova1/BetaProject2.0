@@ -1,0 +1,23 @@
+.slider__secction1--button {
+    width: 220px;
+    height: 55px;
+    color: #fff;
+    background-color: #D2141B;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer; /* manito cursor de puntero utilizado cuando se pasa por encima de los enlaces (típicamente una mano)*/
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color .3s ease;
+    text-decoration: none;
+
+}
+
+.slider__secction1--button:hover {
+    background-color: red;
+    color: #fff;
+    border-color: white;
+}
