@@ -1,8 +1,8 @@
-.slider__secction1--button {
+.slider__secction1--button, .services__section2--button {
     width: 220px;
     height: 55px;
     color: #fff;
-    background-color: #D2141B;
+    background-color:var(--fire-engine-red);
     border-radius: 12px;
     text-align: center;
     cursor: pointer; /* manito cursor de puntero utilizado cuando se pasa por encima de los enlaces (típicamente una mano)*/
@@ -15,9 +15,14 @@
     text-decoration: none;
 
 }
+.services__section2--button {
+    padding: inherit;
+    margin-left: 1.7rem;
+    margin-bottom: 1.8rem;
+}
 
-.slider__secction1--button:hover {
-    background-color: red;
-    color: #fff;
+.slider__secction1--button, .services__section2--button:hover {
+    background-color:var(--poppy);
+    color: var(--platinum);
     border-color: white;
 }

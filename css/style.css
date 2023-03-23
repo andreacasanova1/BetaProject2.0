@@ -15,6 +15,26 @@ body {
   background-color: rgb(113, 106, 106);
 }
 
+section.services__section2 {
+  background-color: var(--platinum);
+}
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.7rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 h1 {
   font-size: 2rem;
   -webkit-margin-after: 1rem;
@@ -23,9 +43,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
-  -webkit-margin-after: 1rem;
-          margin-block-end: 1rem;
+  font-size: 1.7rem;
+  -webkit-padding-before: 1rem;
+          padding-block-start: 1rem;
+  padding-left: 1.7rem;
+  text-align: justify;
+  padding-bottom: 1.1rem;
+}
+h2.section2-h2 {
+  color: var(--dim-gray);
 }
 
 h3 {
@@ -35,6 +61,14 @@ h3 {
 }
 h3.slider-h3 {
   color: var(--platinum);
+}
+
+.section2-h3 {
+  -webkit-margin-after: -2rem;
+          margin-block-end: -2rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--dim-gray);
 }
 
 /*el & sirve para llamar a su padre y poder poner la variable
@@ -112,7 +146,7 @@ h6 {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 770px) {
   .topbar__nav-ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -120,7 +154,7 @@ h6 {
   }
 }
 .topbar__nav-logo {
-  width: 200px;
+  width: 250px;
   height: auto;
 }
 
@@ -142,7 +176,7 @@ a:-webkit-any-link {
   cursor: pointer;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 770px) {
   .menu-burger {
     display: none;
   }
@@ -192,15 +226,66 @@ a:-webkit-any-link {
   padding: 10%;
 }
 
+.services__section2-image1 {
+  background-image: url(../img/landing/enmarcaciones-img.png);
+  width: 340px;
+  height: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-position: 50% 50%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services__section2-image2 {
+  background-image: url(../img/landing/giclée2_ctysim_c_scale\,w_843.png);
+  width: 340px;
+  height: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-position: 50% 50%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galery__section3 {
+  background-image: url(../img/landing/gale3.jpeg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-size: cover;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 2rem;
+}
+
 html {
   font-family: "Poppins", sans-serif;
 }
 
-.slider__secction1--button {
+.slider__secction1--button, .services__section2--button {
   width: 220px;
   height: 55px;
   color: #fff;
-  background-color: #D2141B;
+  background-color: var(--fire-engine-red);
   border-radius: 12px;
   text-align: center;
   cursor: pointer; /* manito cursor de puntero utilizado cuando se pasa por encima de los enlaces (típicamente una mano)*/
@@ -214,18 +299,24 @@ html {
   text-decoration: none;
 }
 
-.slider__secction1--button:hover {
-  background-color: red;
-  color: #fff;
+.services__section2--button {
+  padding: inherit;
+  margin-left: 1.7rem;
+  margin-bottom: 1.8rem;
+}
+
+.slider__secction1--button, .services__section2--button:hover {
+  background-color: var(--poppy);
+  color: var(--platinum);
   border-color: white;
 }
 
 :root {
   --fire-engine-red: hsla(358, 81%, 46%, 1);
-  --poppy: hsla(358, 68%, 55%, 1);
+  --poppy: hsla(358, 73%, 44%);
   --platinum: hsla(0, 10%, 92%, 1);
   --battleship-gray: hsla(60, 1%, 61%, 1);
-  --dim-gray: hsla(60, 0%, 41%, 1);
+  --dim-gray: hsla(0, 0%, 24%);
   --black: hsla(0, 0%, 0%, 1);
 }
 

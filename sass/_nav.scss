@@ -37,7 +37,7 @@
     width: -webkit-fill-available;
     display: none;
     }  
-@media (min-width: 1024px) {
+@media (min-width: 770px) {
         .topbar__nav-ul {
         display: flex
         }
@@ -45,7 +45,7 @@
 
 
 .topbar__nav-logo {
-    width: 200px;
+    width: 250px;
     height: auto;
 }
    
@@ -67,7 +67,7 @@ a:-webkit-any-link {
     left: 90%;
     cursor: pointer;
 }
-@media (min-width: 1024px) {
+@media (min-width: 770px) {
     .menu-burger {
         display: none;
     }

@@ -11,8 +11,19 @@ body {
 
 }
 
+section {
+    &.services__section2 {
+        background-color: var(--platinum);
+}   
+}
 
-
+p {
+    display: flex;
+    padding: 1.7rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
 
 
       

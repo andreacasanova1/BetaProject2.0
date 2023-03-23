@@ -7,16 +7,30 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin-block-end: 1rem;
+    font-size: 1.7rem;
+    padding-block-start: 1rem;
+    padding-left: 1.7rem;
+    text-align: justify;
+    padding-bottom: 1.1rem;
+        &.section2-h2 {
+            color: var(--dim-gray)
+        }
 }
 h3 {
     font-size: 1rem;
     margin-block-end: 1rem;
         &.slider-h3 {
             color: var(--platinum)
+        }
     }
+.section2-h3 {
+    margin-block-end: -2rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color:var(--dim-gray)
 }
+
+
 /*el & sirve para llamar a su padre y poder poner la variable
 especifica en ese unico selector que es un h3 en este caso.*/
 h4 {
@@ -28,5 +42,4 @@ h6 {
     margin-block-end: 1rem;
 
 }
-
 
