@@ -14,25 +14,41 @@
     background-image: url(../img/landing/enmarcaciones-img.png);
     width: 340px;
     height: 340px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
     background-position: 50% 50%;
     margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
 } 
+
 .services__section2-image2 {
     background-image: url(../img/landing/giclée2_ctysim_c_scale\,w_843.png);
     width: 340px;
     height: 340px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
     background-position: 50% 50%;
     margin: auto;
     background-repeat: no-repeat;
     background-size: cover;
+}
+@media (min-width: 600px) {
+    .services__section2-image1, .services__section2-image2 {
+        width: 80%;
+        height: 340px;
+        background-position: 50% 50%;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media (min-width: 1024px) {
+    .services__section2-image1, .services__section2-image2 {
+        width: 340px;
+        height: 340px;
+        background-position: 50% 50%;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 }
 
 .galery__section3 {
