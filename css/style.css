@@ -19,7 +19,8 @@ section.services__section2 {
   background-color: var(--platinum);
 }
 
-.service__section2-grupo1, .services__section2-grupo2 {
+.service__section2-grupo1,
+.services__section2-grupo2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,7 +42,7 @@ section.services__section2 {
           flex-direction: column;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   .services__section2-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -54,6 +55,40 @@ section.services__section2 {
 }
 p {
   padding: 1.7rem;
+}
+p.section3-p {
+  color: var(--platinum);
+}
+p.section4-p {
+  color: var(--platinum);
+}
+p.sliderp-section1 {
+  color: var(--platinum);
+  padding: 0;
+  padding-bottom: inherit;
+}
+
+@media (min-width: 600px) {
+  p {
+    -webkit-margin-before: revert;
+            margin-block-start: revert;
+    padding-left: 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  p {
+    -webkit-margin-before: revert;
+            margin-block-start: revert;
+    padding-left: 3rem;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
 }
 
 h1 {
@@ -74,13 +109,19 @@ h2 {
 h2.section2-h2 {
   color: var(--dim-gray);
 }
+h2.section3-h2 {
+  color: var(--platinum);
+}
+h2.section4-h2 {
+  color: var(--platinum);
+}
 
 h3 {
   font-size: 1rem;
   -webkit-margin-after: 1rem;
           margin-block-end: 1rem;
 }
-h3.slider-h3 {
+h3.slider-h3-title {
   color: var(--platinum);
 }
 
@@ -92,6 +133,16 @@ h3.slider-h3 {
   color: var(--dim-gray);
 }
 
+@media (min-width: 600px) {
+  .section2-h3 {
+    padding-left: 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .section2-h3 {
+    padding-left: 3rem;
+  }
+}
 /*el & sirve para llamar a su padre y poder poner la variable
 especifica en ese unico selector que es un h3 en este caso.*/
 h4 {
@@ -277,9 +328,9 @@ a:-webkit-any-link {
     background-size: cover;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .services__section2-image1, .services__section2-image2 {
-    width: 340px;
+    width: 70%;
     height: 340px;
     background-position: 50% 50%;
     margin: auto;
@@ -304,14 +355,54 @@ a:-webkit-any-link {
   padding: 2rem;
 }
 
+.contact__section4--epoca {
+  background-image: url(../img/landing/galeria_epoca_1162.jpg);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-size: cover;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 10%;
+}
+
+.galery__section3--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+img {
+  width: 340px;
+  height: 340px;
+  margin: 10%;
+}
+
 html {
   font-family: "Poppins", sans-serif;
 }
 
-.slider__secction1--button, .services__section2--button {
+.slider__secction1--button,
+.services__section2--button,
+.contact__section4--button,
+.galery__section3--button {
   width: 220px;
-  height: 55px;
-  color: #fff;
+  height: 50px;
+  color: var(--platinum);
   background-color: var(--fire-engine-red);
   border-radius: 12px;
   text-align: center;
@@ -326,25 +417,43 @@ html {
   text-decoration: none;
 }
 
-.services__section2--button {
-  padding: inherit;
+.services__section2--button,
+.galery__section3--button,
+.contact__section4--button {
   margin-left: 1.7rem;
   margin-bottom: 1.8rem;
 }
 
-.slider__secction1--button, .services__section2--button:hover {
+.slider__secction1--button:hover,
+.services__section2--button:hover,
+.contact__section4--button:hover,
+.galery__section3--button:hover {
   background-color: var(--poppy);
   color: var(--platinum);
-  border-color: white;
+  border-color: var(--battleship-gray);
 }
 
+@media (min-width: 1024px) {
+  .slider__secction1--button, .services__section2--button {
+    -webkit-margin-before: revert;
+            margin-block-start: revert;
+    margin-left: 3.5rem;
+  }
+}
+@media (min-width: 600px) {
+  .services__section2--button {
+    margin-left: 4.5rem;
+    margin-bottom: 3.5rem;
+  }
+}
 :root {
-  --fire-engine-red: hsla(358, 81%, 46%, 1);
-  --poppy: hsla(358, 73%, 44%);
-  --platinum: hsla(0, 10%, 92%, 1);
+  --fire-engine-red: hsla(358, 92%, 49%);
+  --poppy: hsla(358, 72%, 53%);
+  --platinum: hsla(0, 4%, 95%);
   --battleship-gray: hsla(60, 1%, 61%, 1);
   --dim-gray: hsla(0, 0%, 24%);
   --black: hsla(0, 0%, 0%, 1);
+  --mascara: hsla(0, 0%, 0%, 0.4);
 }
 
 /*:root {
