@@ -38,7 +38,9 @@ p {
         color: var(--platinum)
     }  
     &.section4-p {
+        padding: 0 1.7rem 1.7rem 1.7rem;
         color: var(--platinum)
+        
     }
     &.sliderp-section1 {
         color: var(--platinum);
@@ -59,6 +61,13 @@ p {
     margin-block-start: revert;
     padding-left: 3rem;
 }
+}
+.social__media-section5-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.7rem;
+    justify-content: center;
+    background-color: var(--platinum);
 }
 
 
