@@ -34,8 +34,17 @@ h3 {
     margin-block-end: 1rem;
         &.slider-h3-title {
             color: var(--platinum)
-        }    
+        } 
+        &.footer__part-2-h3,
+        &.footer__part-1-h3 {
+            color: var(--platinum);
+            padding: 1.7rem 0 0 1.7rem;
+        }   
      }
+h4 {
+    color: var(--platinum);
+    padding: 1rem 0px 0rem 1.7rem;
+}
     
 .section2-h3 {
     margin-block-end: -2rem;

@@ -7,7 +7,7 @@
 }
   
 body {
-    background-color: rgb(113, 106, 106);
+    background-color: var(--battleship-gray)
 }
 
 section {
@@ -47,7 +47,22 @@ p {
         padding: 0;
         padding-bottom: inherit;
     }
-}
+    &.footer__part-1-p, 
+    &.footer__part-2-p {
+        color: var(--platinum);
+        padding: 0 1.7rem 1.7rem 1.7rem;
+        padding-bottom: inherit;
+    }
+
+    &.artistas-section3 {
+        font-size: 1.3rem;
+        padding: 0 1.7rem 1.7rem 2rem;
+        width: 280px;
+        height: auto;
+        color: var(--black);
+    }
+    }
+
 @media (min-width: 600px){
     p {
     margin-block-start: revert;
@@ -68,6 +83,15 @@ p {
     padding: 1.7rem;
     justify-content: center;
     background-color: var(--platinum);
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    background-color: var(--black);
+    padding: 1.7rem;
 }
 
 
