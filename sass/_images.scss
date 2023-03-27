@@ -88,8 +88,15 @@
 img {
     width: 320px;
     height: 320px;
-    margin: 10%;
+    margin: 30px;
   }
+
+  @media (min-width: 768px) {
+.galery__section3--content {
+        justify-content: space-evenly;
+    }
+}
+ 
 .social__media-section5 {
     width: 100vw;
     display: flex;
