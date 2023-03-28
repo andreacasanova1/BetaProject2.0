@@ -98,7 +98,12 @@ p {
     padding: 1.7rem;
 }
 
-
+@media (min-width: 1024px) {
+    .footer__content {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
       
       
       

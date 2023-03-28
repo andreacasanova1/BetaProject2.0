@@ -3,7 +3,7 @@
 .services__section2--button,
 .contact__section4--button,
 .galery__section3--button,
-.footer__content--button,
+.footer__content--button-colec,
 .footer__content--button-map{
     width: 220px;
     height: 50px;
@@ -23,16 +23,22 @@
 .services__section2--button,
 .galery__section3--button, 
 .contact__section4--button,
-.footer__content--button,
+.footer__content--button-colec,
 .footer__content--button-map {
     margin-left: 1.7rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.7rem;
+}
+
+.footer__content--button-colec,
+.footer__content--button-map {
+    margin-top: 1.7rem
 }
 
 .slider__secction1--button:hover,
 .services__section2--button:hover,
 .galery__section3--button:hover,
 .contact__section4--button:hover,
+.footer__content--button-colec:hover,
 .footer__content--button-map:hover {
     background-color:var(--poppy);
     color: var(--platinum);
