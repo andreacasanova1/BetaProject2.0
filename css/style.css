@@ -83,7 +83,7 @@ p.artistas-section3 {
   width: 280px;
   height: auto;
   color: var(--black);
-  font-size: 18px;
+  font-size: 14px;
 }
 
 @media (min-width: 600px) {
@@ -276,9 +276,8 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -webkit-box-align: center;
@@ -289,6 +288,9 @@ h6 {
 }
 .topbar__nav-ul li a {
   color: var(--platinum);
+}
+.topbar__nav-ul li {
+  list-style-type: none;
 }
 
 @media (min-width: 768px) {
