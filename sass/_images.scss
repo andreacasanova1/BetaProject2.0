@@ -1,5 +1,5 @@
 .slider__section1--content {
-    background-image: url(../img/landing/portada_imagen.jpg);
+    background-image: url(../img/landing/portada_imagen.png);
     display: flex;
     height: 100vh;
     flex-wrap: wrap;
@@ -9,6 +9,11 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     padding: 10%;  
+}
+@media (min-width: 1024px) {
+    .slider__section1--content{
+    padding: 10% 55% 5% 10%;
+}
 }
 .services__section2-image1 {
     background-image: url(../img/landing/enmarcaciones-img.png);

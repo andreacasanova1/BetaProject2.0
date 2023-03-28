@@ -262,7 +262,7 @@ h6 {
 .topbar__nav-ul {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
+  font-size: 16px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -278,8 +278,11 @@ h6 {
   width: -webkit-fill-available;
   display: none;
 }
+.topbar__nav-ul li a {
+  color: var(--platinum);
+}
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .topbar__nav-ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -309,7 +312,7 @@ a:-webkit-any-link {
   cursor: pointer;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 768px) {
   .menu-burger {
     display: none;
   }
@@ -343,7 +346,7 @@ a:-webkit-any-link {
 }
 
 .slider__section1--content {
-  background-image: url(../img/landing/portada_imagen.jpg);
+  background-image: url(../img/landing/portada_imagen.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,6 +362,11 @@ a:-webkit-any-link {
   padding: 10%;
 }
 
+@media (min-width: 1024px) {
+  .slider__section1--content {
+    padding: 10% 55% 5% 10%;
+  }
+}
 .services__section2-image1 {
   background-image: url(../img/landing/enmarcaciones-img.png);
   width: 340px;
@@ -537,7 +545,6 @@ html {
   .slider__secction1--button, .services__section2--button {
     -webkit-margin-before: revert;
             margin-block-start: revert;
-    margin-left: 3.5rem;
   }
 }
 @media (min-width: 600px) {

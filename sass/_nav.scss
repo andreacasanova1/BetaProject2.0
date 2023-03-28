@@ -29,15 +29,18 @@
 .topbar__nav-ul {
     text-decoration: none;
     color: #ffff;
-    font-size: 1rem;
+    font-size: 16px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
     width: -webkit-fill-available;
     display: none;
+        & li a {
+            color: var(--platinum);
+        }
     }  
-@media (min-width: 770px) {
+@media (min-width: 768px) {
         .topbar__nav-ul {
         display: flex
         }
@@ -67,7 +70,7 @@ a:-webkit-any-link {
     left: 90%;
     cursor: pointer;
 }
-@media (min-width: 770px) {
+@media (min-width: 768px) {
     .menu-burger {
         display: none;
     }
