@@ -408,7 +408,7 @@ a:-webkit-any-link {
   }
 }
 .galery__section3 {
-  background-image: url(../img/landing/gale3.jpeg);
+  background-image: url(../img/landing/gale3.png);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -424,6 +424,12 @@ a:-webkit-any-link {
   padding: 10%;
 }
 
+@media (min-width: 1024px) {
+  .galery__section3 {
+    padding: 5% 55% 5% 10%;
+    height: 80vh;
+  }
+}
 .contact__section4--epoca {
   background-image: url(../img/landing/galeria_epoca_1162.jpg);
   height: 100vh;
@@ -440,6 +446,12 @@ a:-webkit-any-link {
   background-position: 13% 87%;
 }
 
+@media (min-width: 1024px) {
+  .contact__section4--epoca {
+    padding: 5% 55% 5% 10%;
+    height: 80vh;
+  }
+}
 .galery__section3--content {
   width: 100vw;
   display: -webkit-box;
@@ -455,6 +467,13 @@ a:-webkit-any-link {
           justify-content: space-between;
 }
 
+@media (min-with: 1024px) {
+  .galery__section3--content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .galery__section3-foto {
   width: 320px;
   height: 320px;
