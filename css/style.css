@@ -58,29 +58,32 @@ p {
 }
 p.section3-p {
   color: var(--platinum);
-  font-size: 15px;
+  font-size: 18px;
+  padding-left: 2rem;
 }
 p.section4-p {
   padding: 0 1.7rem 1.7rem 1.7rem;
   color: var(--platinum);
+  font-size: 18px;
 }
 p.sliderp-section1 {
   color: var(--platinum);
   padding: 0;
   padding-bottom: inherit;
-  font-size: 15px;
+  font-size: 18px;
 }
 p.footer__part-1-p, p.footer__part-2-p {
   color: var(--platinum);
   padding: 0 1.7rem 1.7rem 1.7rem;
   padding-bottom: inherit;
+  font-size: 18px;
 }
 p.artistas-section3 {
-  font-size: 1.3rem;
   padding: 0 1.7rem 1.7rem 2rem;
   width: 280px;
   height: auto;
   color: var(--black);
+  font-size: 18px;
 }
 
 @media (min-width: 600px) {
