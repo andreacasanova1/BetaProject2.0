@@ -35,7 +35,8 @@ section {
 p {    
     padding: 1.7rem;
     &.section3-p {
-        color: var(--platinum)
+        color: var(--platinum);
+        font-size: 15px;
     }  
     &.section4-p {
         padding: 0 1.7rem 1.7rem 1.7rem;
@@ -46,6 +47,7 @@ p {
         color: var(--platinum);
         padding: 0;
         padding-bottom: inherit;
+        font-size: 15px;
     }
     &.footer__part-1-p, 
     &.footer__part-2-p {
@@ -94,7 +96,7 @@ p {
     padding: 1.7rem;
 }
 
-.galery__section3--content 
+
       
       
       
