@@ -15,5 +15,7 @@ function animateBurger() {
     line2__burger.classList.toggle("activeline2__menu-burger");
     line3__burger.classList.toggle("activeline3__menu-burger");
     topbar.classList.toggle("topbar__menu");
+    
 }
+
 

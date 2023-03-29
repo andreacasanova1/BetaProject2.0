@@ -293,7 +293,7 @@ h6 {
   list-style-type: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 950px) {
   .topbar__nav-ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -311,49 +311,6 @@ a:-webkit-any-link {
   text-decoration: underline;
   text-decoration-line: none;
   text-decoration-color: white;
-}
-
-/*este es el menu burger, animado de tres lineas a una equis*/
-.menu-burger { /*este es el padre de mi menú*/
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  margin-top: 20px;
-  left: 90%;
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .menu-burger {
-    display: none;
-  }
-}
-.menu-burger span {
-  display: block;
-  width: 50%;
-  height: 2px;
-  margin-top: 6px;
-  background: red;
-  -webkit-transform-origin: 1px 100%;
-  transform-origin: 1px 100%;
-  -webkit-transition: all 600ms;
-  transition: all 600ms;
-}
-
-/*aqui se llama a js mediante el selector activeline*/
-.activeline1__menu-burger {
-  -webkit-transform: rotate(45deg) translate(-2px, 1px);
-          transform: rotate(45deg) translate(-2px, 1px);
-}
-
-.activeline3__menu-burger {
-  -webkit-transform: rotate(-45deg) translate(-4px, 2px);
-          transform: rotate(-45deg) translate(-4px, 2px);
-}
-
-.activeline2__menu-burger {
-  opacity: 0;
-  margin-left: -30px;
 }
 
 .slider__section1--content {
@@ -640,6 +597,92 @@ $gradient-bottom-left: linear-gradient(315deg, #D3161Dff, #DA3C41ff, #ECE8E8ff, 
 $gradient-radial: radial-gradient(#D3161Dff, #DA3C41ff, #ECE8E8ff, #9D9D9Cff, #686867ff, #000000ff);
 
 */
+.menu-burger {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin-top: 20px;
+  left: 85%;
+  right: 10%;
+}
+
+.menu-burger span {
+  display: block;
+  width: 50%;
+  height: 2px;
+  margin-top: 6px;
+  background: red;
+  -webkit-transform-origin: 0px 100%;
+          transform-origin: 0px 100%;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+
+.menu-burger:active .line1__menu-burger {
+  -webkit-transform: rotate(45deg) translate(-2px, 1px);
+          transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.menu-burger:active .line3__menu-burger {
+  -webkit-transform: rotate(-45deg) translate(-4px, 2px);
+          transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+.menu-burger:active .line2__menu-burger {
+  opacity: 0;
+  margin-left: -30px;
+}
+
+@media (min-width: 950px) {
+  .menu-burger {
+    display: none;
+  }
+}
+/*desde aqui se supone que deberia 
+construir e menu desplegable en mobile*/
+@media screen and (max-width: 950px) {
+  .topbar__nav-container {
+    width: 30vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .topbar__nav-ul {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fill-available;
+  }
+  .topbar__nav-ul li a {
+    color: var(--platinum);
+  }
+  .topbar__nav-ul li {
+    list-style-type: none;
+  }
+}
 /*
 @import lists
 @import forms
