@@ -16,15 +16,15 @@
     transform-origin: 0px 100%;
     transition: all 600ms;
 }
-.menu-burger:active .line1__menu-burger {
+.activeline1__menu-burger {
     transform : rotate(45deg) translate(-2px, 1px);
 }
 
-.menu-burger:active .line3__menu-burger {
+.activeline3__menu-burger {
     transform: rotate(-45deg) translate(-4px, 2px);
 }
 
-.menu-burger:active .line2__menu-burger {
+.activeline2__menu-burger {
     opacity: 0;
     margin-left: -30px;
 }
@@ -52,30 +52,21 @@ construir e menu desplegable en mobile*/
     }
     
     .topbar__nav-container {
-        display: flex;
+        display: none;
         flex-direction: column;
         width: 270px;
-        height: auto;
+        height: 50vh;
         padding: 0px;
         background-color: var(--black);
         color: var(--platinum);
-        display: grid;
-        justify-items: start;
-
-       
-        
-        
-        
         background-color: var(--black);
         color: var(--platinum);
-        display: -ms-grid;
-        
-        align-content: space-between;
-        
-        justify-content: space-evenly;
-        
+        justify-content: unsafe;
+           
     }  
-    
+    .topbar__nav-container--open{
+        display: flex;
+    }    
     .topbar__nav-ul {
         display: flex;
         flex-direction: column;
@@ -84,8 +75,6 @@ construir e menu desplegable en mobile*/
          padding-top: -13px;
         margin-left: 30px;
         margin-top: 30px;
-
-       
 
             & li a {
                 color: var(--platinum);

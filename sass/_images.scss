@@ -78,7 +78,7 @@
 }
 
 .contact__section4--epoca {
-    background-image: url(../img/landing/galeria_epoca_1162.jpg);
+    background-image: url(../img/landing/galeria_epoca_1162_mascara.png);
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
@@ -100,9 +100,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
-
 
     @media (min-width: 1024px) {
          .galery__section3--content {
@@ -149,8 +148,8 @@
     align-items: center;
     justify-content: space-around;
         & .logo-salu{
-            padding: 1.7rem 1.7rem 1.7rem 1.7rem;
-            width: 300px; 
-            height: auto;  
+            width: 24rem;
+            height: auto;
+            margin-bottom: inherit; 
 }
 }
