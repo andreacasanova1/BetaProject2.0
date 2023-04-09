@@ -50,13 +50,7 @@ p {
         padding-bottom: inherit;
         font-size: 18px;
     }
-    &.footer__part-1-p, 
-    &.footer__part-2-p {
-        color: var(--platinum);
-        padding: 0 1.7rem 1.7rem 1.7rem;
-        padding-bottom: inherit;
-        font-size: 13px;
-    }
+   
 
     &.artistas-section3 {
         padding: 0 1.7rem 1.7rem 2rem;
@@ -80,32 +74,7 @@ p {
     margin-block-start: revert;
     padding-left: 3rem;
     }
-}
-.social__media-section5-content {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1.7rem;
-    justify-content: center;
-    background-color: var(--platinum);
-}
-
-.footer__content {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: auto;
-    background-color: var(--black);
-    padding: 1.7rem;
-}
-
-@media (min-width: 1024px) {
-    .footer__content {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-}
-      
-      
-      
-      
-      
+}   
+  /*aqui empezamos a crear css de la página de productos y servicios*/    
+   
+  

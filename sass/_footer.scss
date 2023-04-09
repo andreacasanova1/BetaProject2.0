@@ -1,0 +1,32 @@
+p{
+    &.footer__part-1-p, 
+    &.footer__part-2-p {
+        color: var(--platinum);
+        padding: 0 1.7rem 1.7rem 1.7rem;
+        padding-bottom: inherit;
+        font-size: 13px;
+    }
+}
+.social__media-section5-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.7rem;
+    justify-content: center;
+    background-color: var(--platinum);
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    background-color: var(--black);
+    padding: 1.7rem;
+}
+
+@media (min-width: 1024px) {
+    .footer__content {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}

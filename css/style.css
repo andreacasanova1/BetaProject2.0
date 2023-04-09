@@ -72,12 +72,6 @@ p.sliderp-section1 {
   padding-bottom: inherit;
   font-size: 18px;
 }
-p.footer__part-1-p, p.footer__part-2-p {
-  color: var(--platinum);
-  padding: 0 1.7rem 1.7rem 1.7rem;
-  padding-bottom: inherit;
-  font-size: 13px;
-}
 p.artistas-section3 {
   padding: 0 1.7rem 1.7rem 2rem;
   width: 280px;
@@ -100,42 +94,10 @@ p.artistas-section3 {
     padding-left: 3rem;
   }
 }
-.social__media-section5-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 1.7rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: var(--platinum);
-}
-
-.footer__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100vw;
-  height: auto;
-  background-color: var(--black);
-  padding: 1.7rem;
-}
-
-@media (min-width: 1024px) {
-  .footer__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-}
+/*aqui empezamos a crear css de la página de productos y servicios*/
 h1 {
   font-size: 30px;
+  text-transform: uppercase;
 }
 
 h2,
@@ -172,6 +134,7 @@ h2 {
 }
 h2.section2-h2 {
   color: var(--dim-gray);
+  padding-left: 4rem;
 }
 h2.section4-h2 {
   color: var(--platinum);
@@ -189,13 +152,7 @@ h3.footer__part-2-h3, h3.footer__part-1-h3 {
   color: var(--platinum);
   padding: 1.7rem 0 0 1.7rem;
 }
-
-h4 {
-  color: var(--platinum);
-  padding: 1rem 0px 0rem 1.7rem;
-}
-
-.section2-h3 {
+h3.section2-h3 {
   -webkit-margin-after: -2rem;
           margin-block-end: -2rem;
   padding: 1.5rem;
@@ -203,14 +160,19 @@ h4 {
   color: var(--dim-gray);
 }
 
-@media (min-width: 768px) {
+h4 {
+  color: var(--platinum);
+  padding: 1rem 0px 0rem 1.7rem;
+}
+
+@media (min-width: 600px) {
   .section2-h3 .section-h2 {
-    padding-left: 3.5rem;
+    padding-left: 4rem;
   }
 }
 @media (min-width: 1024px) {
   .section2-h3 {
-    padding-left: 3rem;
+    padding-left: 4rem;
   }
 }
 /*el & sirve para llamar a su padre y poder poner la variable
@@ -225,6 +187,22 @@ h6 {
   font-size: 0.1rem;
   -webkit-margin-after: 1rem;
           margin-block-end: 1rem;
+}
+
+.hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 70% vh;
+}
+.hero-content .hero-h1 {
+  color: var(--platinum);
+  font-size: 3rem;
+  margin-top: 18%;
 }
 
 /*media queries*/
@@ -496,6 +474,21 @@ a:-webkit-any-link {
   margin-bottom: inherit;
 }
 
+/* aquí comienzan las imagenes de la page de servicios*/
+.hero-overlay {
+  width: 100vw;
+  height: 70vh;
+  padding: 0;
+  background-image: url(../img/page-services/pricipal-fragme.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 600px) {
+  .hero-overlay {
+    background-image: url(../img/page-services/principal.png);
+  }
+}
 html {
   font-family: "Poppins", sans-serif;
 }
@@ -696,6 +689,47 @@ construir e menu desplegable en mobile*/
   }
   .topbar__nav-ul li {
     list-style-type: none;
+  }
+}
+p.footer__part-1-p, p.footer__part-2-p {
+  color: var(--platinum);
+  padding: 0 1.7rem 1.7rem 1.7rem;
+  padding-bottom: inherit;
+  font-size: 13px;
+}
+
+.social__media-section5-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1.7rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--platinum);
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+  background-color: var(--black);
+  padding: 1.7rem;
+}
+
+@media (min-width: 1024px) {
+  .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 /*
