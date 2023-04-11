@@ -53,47 +53,6 @@ section.services__section2 {
             flex-direction: row;
   }
 }
-p {
-  padding: 1.7rem;
-}
-p.section3-p {
-  color: var(--platinum);
-  font-size: 18px;
-  padding-left: 2rem;
-}
-p.section4-p {
-  padding: 0 1.7rem 1.7rem 1.7rem;
-  color: var(--platinum);
-  font-size: 18px;
-}
-p.sliderp-section1 {
-  color: var(--platinum);
-  padding: 0;
-  padding-bottom: inherit;
-  font-size: 18px;
-}
-p.artistas-section3 {
-  padding: 0 1.7rem 1.7rem 2rem;
-  width: 280px;
-  height: auto;
-  color: var(--black);
-  font-size: 14px;
-}
-
-@media (min-width: 600px) {
-  p {
-    -webkit-margin-before: revert;
-            margin-block-start: revert;
-    padding-left: 3.5rem;
-  }
-}
-@media (min-width: 1024px) {
-  p {
-    -webkit-margin-before: revert;
-            margin-block-start: revert;
-    padding-left: 3rem;
-  }
-}
 /*aqui empezamos a crear css de la página de productos y servicios*/
 h1 {
   font-size: 30px;
@@ -138,6 +97,10 @@ h2.section2-h2 {
 }
 h2.section4-h2 {
   color: var(--platinum);
+}
+h2.servis_page2-h2 {
+  padding: 0rem 3rem 2rem 3rem;
+  text-align: center;
 }
 
 h3 {
@@ -187,6 +150,7 @@ h6 {
   font-size: 0.1rem;
   -webkit-margin-after: 1rem;
           margin-block-end: 1rem;
+  /* de aquí el style de page services*/
 }
 
 .hero-content {
@@ -199,12 +163,27 @@ h6 {
   width: 100vw;
   height: 70% vh;
 }
-.hero-content .hero-h1 {
+
+.hero-h1 {
   color: var(--platinum);
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 18%;
 }
 
+@media (min-width: 600px) {
+  .hero-h1 {
+    color: var(--platinum);
+    font-size: 3rem;
+    margin-top: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-h1 {
+    color: var(--platinum);
+    font-size: 3.5rem;
+    margin-top: 20%;
+  }
+}
 /*media queries*/
 .topbar {
   display: -webkit-box;
@@ -493,6 +472,55 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+p {
+  padding: 1.7rem;
+}
+p.section3-p {
+  color: var(--platinum);
+  font-size: 18px;
+  padding-left: 2rem;
+}
+p.section4-p {
+  padding: 0 1.7rem 1.7rem 1.7rem;
+  color: var(--platinum);
+  font-size: 18px;
+}
+p.sliderp-section1 {
+  color: var(--platinum);
+  padding: 0;
+  padding-bottom: inherit;
+  font-size: 18px;
+}
+p.artistas-section3 {
+  padding: 0 1.7rem 1.7rem 2rem;
+  width: 280px;
+  height: auto;
+  color: var(--black);
+  font-size: 14px;
+}
+
+@media (min-width: 600px) {
+  p {
+    -webkit-margin-before: revert;
+            margin-block-start: revert;
+    padding-left: 3.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  p {
+    -webkit-margin-before: revert;
+            margin-block-start: revert;
+    padding-left: 3rem;
+  }
+}
+.text-indent-spacing {
+  word-spacing: 0.4em;
+  text-indent: 2em;
+  padding: 0rem 2rem 0rem 2rem;
+  margin-top: 2em;
+  /*poner media querys para destop y tablet*/
+}
+
 .slider__secction1--button,
 .services__section2--button,
 .contact__section4--button,
@@ -503,14 +531,15 @@ html {
   height: 50px;
   color: var(--platinum);
   background-color: var(--fire-engine-red);
-  border-radius: 12px;
+  border-radius: 6px;
   text-align: center;
   cursor: pointer; /* manito cursor de puntero utilizado cuando se pasa por encima de los enlaces (típicamente una mano)*/
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
+  border: 2px solid var(--poppy);
 }
 
 .services__section2--button,
@@ -535,7 +564,6 @@ html {
 .footer__content--button-map:hover {
   background-color: var(--poppy);
   color: var(--platinum);
-  border-color: var(--battleship-gray);
 }
 
 @media (min-width: 1024px) {

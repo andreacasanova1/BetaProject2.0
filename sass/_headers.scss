@@ -42,6 +42,10 @@ h2 {
         &.section4-h2 {
             color: var(--platinum)
         }
+        &.servis_page2-h2 {
+            padding: 0rem 3rem 2rem 3rem;
+            text-align: center;
+        }
 }
 h3 {
     font-size: 1rem;
@@ -88,20 +92,36 @@ h4 {
 h6 {
     font-size: 0.1rem;
     margin-block-end: 1rem;
-
+/* de aquí el style de page services*/
 }
 .hero-content{
     display: flex;
     justify-content: center;
     width: 100vw;
     height: 70%vh;
-    & .hero-h1 {
+    
+}
+.hero-h1 {
+    color:var(--platinum);
+    font-size: 2rem;
+    margin-top: 18%; 
+}
+
+@media (min-width: 600px){
+    .hero-h1 {
         color:var(--platinum);
         font-size: 3rem;
-        margin-top: 18%;
-        
+        margin-top: 40%;
     }
 }
+@media (min-width: 1024px){
+    .hero-h1 {
+        color:var(--platinum);
+        font-size: 3.5rem;
+        margin-top: 20%;
+    }
+}
+
 
 
 

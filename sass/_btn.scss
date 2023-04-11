@@ -9,14 +9,16 @@
     height: 50px;
     color: var(--platinum);
     background-color:var(--fire-engine-red);
-    border-radius: 12px;
+    border-radius: 6px;
     text-align: center;
     cursor: pointer; /* manito cursor de puntero utilizado cuando se pasa por encima de los enlaces (típicamente una mano)*/
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-decoration: none;
+    border: 2px solid var(--poppy);
+    
     
 
 }
@@ -42,7 +44,7 @@
 .footer__content--button-map:hover {
     background-color:var(--poppy);
     color: var(--platinum);
-    border-color:var(--battleship-gray);
+    
 }
 
 @media (min-width: 1024px){

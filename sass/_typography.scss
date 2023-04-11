@@ -2,3 +2,55 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+p {    
+    padding: 1.7rem;
+    &.section3-p {
+        color: var(--platinum);
+        font-size: 18px;
+        padding-left: 2rem;
+    }  
+    &.section4-p {
+        padding: 0 1.7rem 1.7rem 1.7rem;
+        color: var(--platinum);
+        font-size: 18px; 
+    }
+    &.sliderp-section1 {
+        color: var(--platinum);
+        padding: 0;
+        padding-bottom: inherit;
+        font-size: 18px;
+    }
+   
+
+    &.artistas-section3 {
+        padding: 0 1.7rem 1.7rem 2rem;
+        width: 280px;
+        height: auto;
+        color: var(--black);
+        font-size: 14px;
+    }
+}
+
+    @media (min-width: 600px){
+    p {
+    margin-block-start: revert;
+    padding-left: 3.5rem;
+    }
+    }
+
+
+    @media (min-width: 1024px){
+    p {
+    margin-block-start: revert;
+    padding-left: 3rem;
+    }
+}   
+.text-indent-spacing  {
+    word-spacing: 0.4em;
+    text-indent: 2em;
+    padding: 0rem 2rem 0rem 2rem;
+    margin-top: 2em;
+    
+    /*poner media querys para destop y tablet*/
+}
