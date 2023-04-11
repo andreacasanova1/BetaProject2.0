@@ -36,16 +36,17 @@ h2 {
     padding-bottom: 1.1rem;
         &.section2-h2 {
             color: var(--dim-gray);
-            padding-left: 4rem;
+            padding-left: 1.5rem;
 
         }
         &.section4-h2 {
             color: var(--platinum)
         }
         &.servis_page2-h2 {
-            padding: 0rem 3rem 2rem 3rem;
+            padding: 1rem 3rem 2rem 3rem;
             text-align: center;
         }
+        
 }
 h3 {
     font-size: 1rem;
@@ -63,11 +64,20 @@ h3 {
             padding: 1.5rem;
             font-size: 1.5rem;
             color:var(--dim-gray)
-        }  
-     }
+        }
+        &.section2__passepartout-h3 {
+            padding:2rem 2rem 1rem 2rem;
+            
+        }
+    }
 h4 {
     color: var(--platinum);
     padding: 1rem 0px 0rem 1.7rem;
+    font-size: 0.8rem;
+    margin-block-end: 1rem;
+        &.section2__passepartout-h4 {
+            color: var(--black);
+    }
 }
     
 
@@ -85,10 +95,7 @@ h4 {
 
 /*el & sirve para llamar a su padre y poder poner la variable
 especifica en ese unico selector que es un h3 en este caso.*/
-h4 {
-    font-size: 0.8rem;
-    margin-block-end: 1rem;
-}
+
 h6 {
     font-size: 0.1rem;
     margin-block-end: 1rem;
