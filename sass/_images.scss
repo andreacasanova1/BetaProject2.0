@@ -170,7 +170,7 @@
 }
 }
 
-/*esta sección es la de muestras de molduras*/
+/*esta sección es la de muestras de molduras pagina de producyos y servicios*/
 .section1__molduras-div {
     
     display: flex;
@@ -190,10 +190,7 @@
     height: 8rem;
     width: 8rem;
 }
-.img-ser {
-    height: 16rem;
-    width: 16rem;
-}
+
 @media (min-width: 780px){
     .section1__molduras-div {
         padding: 0rem 6rem 0rem 6rem;
@@ -216,13 +213,15 @@
             }
     }
 }
-@media (min-width:780px){
-    .img-ser {
-        height:16ren;
-        width:16ren;
-        padding: 1rem;
-    }
-}
+
+.img-ser {
+    width: 100vw;
+    justify-content: center;
+    padding: 1rem;
+
+}   
+        
+  
 
 @media (min-width:1280px){
     .img-ser {
