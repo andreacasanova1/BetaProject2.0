@@ -7,7 +7,7 @@
 }
   
 body {
-    background-color: var(--battleship-gray)
+    background-color: var(--platinum)
 }
 
 section {
@@ -28,9 +28,9 @@ section {
 }
 @media (min-width: 1024px) {
     .services__section2-content {
-            display: flex;
-            flex-direction: row;
-        }       
+        display: flex;
+        flex-direction: row;
+    }       
 }
 
   /*aqui empezamos a crear css de la página de productos y servicios*/    
@@ -41,12 +41,15 @@ section {
     flex-direction: row;
     justify-content: space-evenly;
 }
-.section2__pp-container1 {
+.section2__pp-container {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-}
-.section2__pp {
-    display: flex;
-    flex-direction: column;
+
+@media (min-width: 1280px){
+    .section2__pp-container1{
+        flex-direction: row;
+        }
+
+    }
 }
