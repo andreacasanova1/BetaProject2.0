@@ -220,13 +220,18 @@
     padding: 1rem;
 
 }   
-        
+@media (min-width:780px) {
+    .img-ser{
+        height: 350px;
+        width: 350px;
+    }
+}      
   
 
 @media (min-width:1280px){
     .img-ser {
         height: 26rem;
         width: 26rem;
-        padding: 4rem;
+        padding-left: 1rem;
     }
 }
