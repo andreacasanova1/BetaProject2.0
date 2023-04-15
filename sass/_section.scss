@@ -50,8 +50,14 @@ section {
 @media (min-width: 780px){
     .section2__pp-child {
         display:flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
+        margin: 1.5rem;
+        
         }
-
+    .var-yes {
+        flex-direction: row;
+        background-color: var(--battleship-gray);
+        padding:2rem;
+    }
     }
 }

@@ -89,9 +89,18 @@ section.services__section2 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin: 1.5rem;
+  }
+  .section2__pp-container .var-yes {
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    background-color: var(--battleship-gray);
+    padding: 2rem;
   }
 }
 
@@ -698,7 +707,7 @@ p.artistas-section3 {
   --fire-engine-red: hsla(358, 92%, 49%);
   --poppy: hsla(358, 72%, 53%);
   --platinum: hsla(0, 4%, 95%);
-  --battleship-gray: hsla(60, 1%, 61%, 1);
+  --battleship-gray: rgb(227, 227, 227);
   --dim-gray: hsla(0, 0%, 24%);
   --black: hsla(0, 0%, 0%, 1);
   --mascara: hsla(0, 0%, 0%, 0.4);
