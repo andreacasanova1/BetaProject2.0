@@ -16,12 +16,16 @@ p{
 }
 
 .footer__content {
+    width: calc(100vw / 3);
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
     height: auto;
     background-color: var(--black);
     padding: 1.7rem;
+    
+
+
 }
 
 @media (min-width: 1024px) {
